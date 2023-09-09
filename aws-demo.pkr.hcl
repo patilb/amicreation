@@ -49,7 +49,7 @@ build {
 
     inline = [
       "chmod +x /tmp/script.sh",
-	  "tmp/script.sh"
+	  "/tmp/script.sh"
 	  
     ]
   }
