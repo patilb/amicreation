@@ -21,16 +21,11 @@ source "amazon-ebs" "ubuntu" {
   ami_name      = "packer-ubuntu-aws-${local.timestamp}"
   instance_type = "t2.micro"
   region        = "us-east-1"
-  source_ami_filter {
-    filters = {
-      name                = "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*"
-      root-device-type    = "ebs"
-      virtualization-type = "hvm"
-    }
-    most_recent = true
-    owners      = ["585010783208"]
-  }
+  source_ami = "ami-03f65b8614a860c29"
   ssh_username = "ubuntu"
+  ami_regions =[
+		"us-east-1"
+  ]
 }
 
 build {
