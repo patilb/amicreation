@@ -41,7 +41,7 @@ build {
   
   provisioner "file" {
 
-    source = "script.sh",
+    source = "script.sh"
 	destination = "/tmp/script.sh"
   }
 
