@@ -2,6 +2,7 @@
 
 name: AWS AMI using Packer Config
 
+
 on:
   push:
     branches: [ "master" ]
